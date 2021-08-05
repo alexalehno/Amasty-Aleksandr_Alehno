@@ -1,0 +1,17 @@
+{
+    "name": "amasty/amasty_aleksandralehno",
+    "type": "mogento2-module",
+    "description": "test module",
+    "version": "1.0.0",
+    "require": {
+        "php": "7.4.22"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Amasty\\Amasty_AleksandrAlehno\\": ""
+        }
+    }
+}
