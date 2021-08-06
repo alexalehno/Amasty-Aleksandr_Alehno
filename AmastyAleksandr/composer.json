@@ -1,5 +1,5 @@
 {
-    "name": "amasty/amasty_aleksandralehno",
+    "name": "amasty/amastyaleksandr",
     "type": "mogento2-module",
     "description": "test module",
     "version": "1.0.0",
@@ -11,7 +11,7 @@
             "registration.php"
         ],
         "psr-4": {
-            "Amasty\\Amasty_AleksandrAlehno\\": ""
+            "Amasty\\AmastyAleksandr\\": ""
         }
     }
 }
