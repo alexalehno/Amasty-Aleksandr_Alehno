@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Amasty_Aleksandr::css/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+        <referenceContainer name="content">
+            <container name="Amasty_Aleksandr.main" htmlTag="div" htmlClass="main-page">
+
+                <block name="Amasty_Aleksandr.hello" class="Amasty\Aleksandr\Block\Index"
+                       template="Amasty_Aleksandr::hello.phtml"/>
+
+                <block name="Amasty_Aleksandr.form" class="Amasty\Aleksandr\Block\Index"
+                       template="Amasty_Aleksandr::form.phtml">
+                    <block name="Amasty_Aleksandr.additional" template="Amasty_Aleksandr::additional.phtml"/>
+                </block>
+
+            </container>
+        </referenceContainer>
+
+    </body>
+
+</page>
+
+
+
