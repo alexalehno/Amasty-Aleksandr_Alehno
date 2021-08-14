@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="Amasty_Aleksandr" translate="label" sortOrder="10">
+            <label>Amasty Aleksandr</label>
+        </tab>
+
+        <section id="aleksandr_config" translate="label" sortOrder="2" showInDefault="1" showInWebsite="1"
+                 showInStore="1">
+            <label>Aleksandr Config</label>
+            <tab>Amasty_Aleksandr</tab>
+            <resource>Amasty_Aleksandr::config</resource>
+
+            <group id="general" translate="label" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>General Configuration</label>
+                <field id="enabled" type="select" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Is Module Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+
+                <field id="greeting_text" type="textarea" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Greeting Text</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+
+
+                <field id="show_hide_qtu" type="select" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show qty</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+
+                <field id="default_value" type="text" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Value of qty</label>
+
+                    <depends>
+                        <field id="show_hide_qtu">1</field>
+                    </depends>
+                </field>
+
+            </group>
+        </section>
+    </system>
+</config>
+
+
+

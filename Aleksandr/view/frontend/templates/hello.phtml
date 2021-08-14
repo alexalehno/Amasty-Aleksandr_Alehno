@@ -1,1 +1,9 @@
-<h1>Hello World</h1>
+<?php
+/** @var Amasty\Aleksandr\Block\Index $block */
+?>
+
+
+<h1><?=$block->greetingText();?></h1>
+
+
+<?= $block->getChildHtml(); ?>
